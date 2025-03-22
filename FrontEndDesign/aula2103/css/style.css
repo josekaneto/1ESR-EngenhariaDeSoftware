@@ -1,0 +1,44 @@
+body{
+    font-family: "Merriweather", serif;
+}
+
+h1{
+    color: #dd7600;
+    font-size: 45px;
+    font-family: "Playfair Display", serif;
+}
+
+h2 {
+    color: #ffe712;
+}
+
+h3 {
+    color: #008181;
+}
+
+img{
+    width: 50%;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+img:hover{
+    scale: .95;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #dc143c;
+    transition:  0.5s;
+}
+
+a:hover{
+    color: #000;
+}
+
+a:active{
+
+}
+
