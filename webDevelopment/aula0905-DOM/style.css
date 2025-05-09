@@ -1,0 +1,10 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    border: 10px solid black
+}
+
+.oculta{
+    display: none;
+}
