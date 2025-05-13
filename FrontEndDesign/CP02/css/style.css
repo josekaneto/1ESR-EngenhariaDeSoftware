@@ -1,0 +1,101 @@
+:root{
+    --margem-principal: 20px;
+    --padding-principal: 20px;
+    --fonte-principal:  "Raleway", sans-serif;
+    --cor-principal: rgba(0, 60, 100, 0.8);
+    --cor-subtitulo: rgba(85, 255, 0, 0.5);
+    --cor-fundo-link: rgba(1, 144, 239, 0.8);
+    --cor-texto-link: rgba(255, 0, 204);
+    --cor-texto-com-fundo: #ffffff;
+    --largura: 100%;
+    --altura:  450px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+}
+
+.section-principal {
+    width: 90%;
+    min-height: 100vh;
+    margin: var(--margem-principal) auto;
+    padding: var(--padding-principal);
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-esquerda{
+    width: 65%;
+    height: var(--altura);
+    display: flex;
+    flex-direction: column;
+
+    & img{
+        width: var(--largura);
+        height: 300px;
+        object-fit: cover;
+    }
+
+    & .container-grande{
+        width: var(--largura);
+        height: 150px;
+        padding: var(--padding-principal) 0 0 0 ;
+        display: flex;
+        justify-content: space-between; 
+
+        & h1{
+            font-size: 40px;
+            margin: 0 50px 0 0;
+        }
+    }
+    
+    & .container-pequeno {
+        width: var(--largura);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        align-items: flex-start;
+
+        & p{
+            font-size: 16px;
+            word-wrap: break-word;
+        }
+
+        & a{
+            padding: 10px 20px;
+            background-color: var(--cor-fundo-link);
+            word-wrap: break-word;
+            text-decoration: none;
+            color: var(--cor-texto-link);
+        }
+    }
+}
+
+.container-direita{
+    width: 30%;
+    height: var(--altura);
+    background-color: var(--cor-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: var(--padding-principal) 15px;
+
+    & .topicos{
+        width: var(--largura);
+        display: flex;
+        flex-direction: column; 
+        gap: 10px;
+    }
+    & h2{
+        color: var(--cor-subtitulo);
+        font-size: 28px;
+    }
+
+    & h3,p{
+        color: var(--cor-texto-com-fundo);
+    }
+}
