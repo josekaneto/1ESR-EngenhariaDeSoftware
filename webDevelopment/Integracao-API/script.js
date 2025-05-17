@@ -18,6 +18,7 @@ const  listarProdutos = async () => {
 
 listarProdutos();
 
+
 document.getElementById("salvar-produto").onclick = async (e) => {
   e.preventDefault()
   const name = document.getElementById("name").value.trim()
