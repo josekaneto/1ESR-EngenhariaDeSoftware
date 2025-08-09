@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: calibri;
+}
+
+h2 {
+    margin: 2rem 4rem 1rem;
+    font-size: 2rem;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1320px;
+    margin: 1rem auto;
+   
+}
+
+.box {
+    border: 1px solid #CCC;
+    text-align: center;
+    align-content: center;    
+}

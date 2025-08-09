@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-light-700: #ffffff;
+    --color-light-500: #f9f9f9;
+    --color-light-300: #cccccc;
+    --gradient: linear-gradient(45deg,
+    hsl(240deg 19% 17%) 0%,
+    hsl(284deg 16% 21%) 9%,
+    hsl(326deg 17% 26%) 33%,
+    hsl(348deg 19% 33%) 62%,
+    hsl(7deg 19% 38%) 80%,
+    hsl(21deg 22% 41%) 90%,
+    hsl(35deg 20% 44%) 96%,
+    hsl(55deg 15% 47%) 100%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: calibri;
+    background-color: var(--color-light-500);
+}

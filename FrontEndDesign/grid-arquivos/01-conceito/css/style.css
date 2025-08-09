@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --first-color: #779b63;
+    --second-color: #d62828;
+    --third-color: #f77f00;
+    --fourth-color: #291e8b;
+    --bg-dark: #333;
+    --bg-white: #fff;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bg-dark);
+    padding: 1rem;
+    font-family: calibri;
+    font-size: 1.6rem;
+}
+
+h1 {
+    color: var(--bg-white);
+    font-size: 4rem;
+    margin: 1rem 0;
+}
+
+h2 {
+    color: var(--first-color);
+    font-size: 3rem;
+}
+
+.container {
+    margin: 2rem auto;
+    text-align: center;
+    color: var(--bg-white);
+}
+
+.box1 {
+    background-color: var(--first-color);
+    min-height: 5rem;
+}
+
+.box2 {
+    background-color: var(--second-color);
+    min-height: 5rem;
+}
+
+.box3 {
+    background-color: var(--third-color);
+    min-height: 5rem;
+}
+
+.box4 {
+    background-color: var(--fourth-color);
+    min-height: 5rem;
+}
+
+.grid-container{
+    display: grid;
+    
+}
+
+.ex-1{
+    grid-template-columns: 100px 200px 300px 150px;
+    grid-template-columns: 10% 30% 40% 20%;
+    grid-template-columns: 50px 20rem 40% 120px;
+    grid-template-columns: 1fr 2fr 3fr 4fr
+}
+
+/* Função de repetição para tamanhos de coluna */
+.ex-2{
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* minmax() - definir valor mínimo e valor máximo */
+
+.ex-3{
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+}
+
+/* auto-fit()  
+    Na maioria das vezes usamos quando não sabemos o número de colunas, por causa disso
+    devemos usar a função repeat().
+    Ele colocará a maior quantidade de colunas na tela, quando não couber ele quebra, 
+    quando temos poucas colunas, para que ocupem todo espaço da linha.
+    É bom usar minmax(), pois assim ele controla a quebra de forma igual.
+*/
+
+.ex-4{
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    row-gap: 20px;
+    column-gap: 30px;
+}
+
+/* autofill() - Mesmo que o autofit(), porém não cresce as colunas para que ocupem todo espaco vazio */
+
+.ex-5{
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
