@@ -1,3 +1,4 @@
+/* reset */
 * {
     margin: 0;
     padding: 0;
@@ -16,21 +17,53 @@ body {
 .container {
     padding: 1rem;
     color: #fff;
-    font-size: 3rem; 
+    font-size: 3rem;   
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-auto-rows: 100px;
+    grid-template-areas: 
+    'header     header'
+    'header     header'
+    'main       aside'
+    'main       aside'
+    'main       aside'
+    'footer     footer'
+    'footer     footer'
+        ;
 }
 
 header {
-    background-color: hsl(252, 6%, 12%);
+    background-color: hsl(252, 6%, 12%);   
+    grid-area: header;
 }
 
 main {
-    background-color: hsl(252, 35%, 16%);
+    background-color: hsl(252, 35%, 16%);   
+    grid-area: main;
 }
 
 aside {
-    background-color: hsl(252, 52%, 14%);
+    background-color: hsl(252, 52%, 14%);  
+    grid-area: aside;
 }
 
 footer {
-    background-color: hsl(252, 74%, 12%);   
+    background-color: hsl(252, 74%, 12%);
+    grid-area: footer;
+
+}
+
+@media(width <= 900px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        grid-column: 1/1;
+    }
+
+    aside {
+        grid-column: 1/-1;
+    }
+
 }
