@@ -1,0 +1,3 @@
+Olá, este é um exemplo de escrita em arquivo.
+Python é poderoso e versátil!
+Fechando o arquivo automaticamente com o bloco "with".

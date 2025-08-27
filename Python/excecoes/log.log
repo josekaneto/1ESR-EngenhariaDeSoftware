@@ -1,0 +1,23 @@
+2025-08-26 22:02:34,451 - DEBUG - Executing program
+2025-08-26 22:02:34,451 - DEBUG - Processing data...
+2025-08-26 22:02:34,451 - INFO - Server started successfully.
+2025-08-26 22:02:34,451 - WARNING - Invalid configuration detected.
+2025-08-26 22:02:34,451 - ERROR - Failed to connect to the database.
+2025-08-26 22:02:34,451 - CRITICAL - Unexpected system error occurred. Shutting down.
+
+2025-08-26 22:02:35,007 - DEBUG - Executing program
+2025-08-26 22:02:35,007 - DEBUG - Processing data...
+2025-08-26 22:02:35,007 - INFO - Server started successfully.
+2025-08-26 22:02:35,007 - WARNING - Invalid configuration detected.
+2025-08-26 22:02:35,007 - ERROR - Failed to connect to the database.
+2025-08-26 22:02:35,007 - CRITICAL - Unexpected system error occurred. Shutting down.
+
+2025-08-26 22:02:35,572 - DEBUG - Executing program
+2025-08-26 22:02:35,572 - DEBUG - Processing data...
+2025-08-26 22:02:35,572 - INFO - Server started successfully.
+2025-08-26 22:02:35,572 - WARNING - Invalid configuration detected.
+2025-08-26 22:02:35,572 - ERROR - Failed to connect to the database.
+2025-08-26 22:02:35,572 - CRITICAL - Unexpected system error occurred. Shutting down.
+
+2025-08-26 22:05:23,275 - INFO - Iniciando Programa
+2025-08-26 22:05:23,276 - ERROR - Ocorreu um erro inesperado division by zero
