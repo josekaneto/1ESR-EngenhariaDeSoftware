@@ -1,0 +1,22 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css");
+@import "tailwindcss";
+
+@theme {
+    --animate-pizza: title 2s ease-in-out;
+ }
+
+
+@keyframes title {
+    0%{
+        transform: translateX(-1000px)
+    }
+    50%{
+        transform: translateX(1000px);
+    }
+    100% {
+        transform: translateX(0);
+        
+    }
+    
+
+}
