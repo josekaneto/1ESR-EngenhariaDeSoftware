@@ -3,8 +3,14 @@
 
 @theme {
     --animate-pizza: title 2s ease-in-out;
- }
+    --color-azul: #336699;
+    --spacing-maior: 500px;
+}
 
+.scroolView{
+    animation: viewAnimation both;
+    animation-timeline: view(70%, 20%);
+}
 
 @keyframes title {
     0%{
@@ -17,6 +23,19 @@
         transform: translateX(0);
         
     }
-    
+}
 
+@keyframes viewAnimation{
+    from{
+        opacity: 0;
+        transform: scale(.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.table-th{
+    @apply min-w-[120px] px-4 py-3 text-center text-lg font-semibold;
 }
